@@ -10,7 +10,8 @@
 		"dev": "next -p 3443",
 		"build": "next build",
 		"start": "next start -p 4334",
-		"analyze": "ANALYZE=true yarn build"
+		"analyze": "ANALYZE=true yarn build",
+		"tsconfig:effective": "tsc --showConfig"
 	},
 	"husky": {
 		"hooks": {
