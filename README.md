@@ -2,7 +2,7 @@
 
 ## Use the dev branch
 
-## to switch from main to
+## to switch from main to dev
 
 ```git
 git add . && git commit -m "switching to dev" && git checkout -b dev
