@@ -1,5 +1,7 @@
 # Jacob Dental Group
 
+## Added GA v4 (new gtag tracker)
+
 ## Use the dev branch
 
 ## to switch from main to dev
