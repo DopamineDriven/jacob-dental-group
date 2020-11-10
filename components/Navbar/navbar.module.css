@@ -50,5 +50,5 @@
 }
 
 .ul {
-	@apply col-span-auto text-right;
+	@apply text-right;
 }
