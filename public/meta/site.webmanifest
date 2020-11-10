@@ -1,7 +1,7 @@
 {
-	"name": "Building a JAMstack Store",
-	"short_name": "JAMstack",
-	"start_url": "https://building-a-jamstack-store.vercel.app",
+	"name": "Mark Jacob Dental Group",
+	"short_name": "MJ DDS",
+	"start_url": "https://mark-jacob-dental-group.vercel.app",
 	"icons": [
 		{
 			"src": "/meta/android-chrome-192x192.png",
