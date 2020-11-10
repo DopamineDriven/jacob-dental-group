@@ -229,3 +229,7 @@ mutation Login {
 ```ts
 href={`localhost:3000/api/preview?secret=${process.env.WORDPRESS_PREVIEW_SECRET}&id=${draft.id}`}
 ```
+
+#### Google Analytics
+
+- https://medium.com/frontend-digest/using-nextjs-with-google-analytics-and-typescript-620ba2359dea
