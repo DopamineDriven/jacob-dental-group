@@ -1,13 +1,17 @@
 {
 	"compilerOptions": {
-		"target": "es5",
-		"lib": ["dom", "dom.iterable", "esnext"],
+		"target": "esnext",
+		"lib": ["dom", "ES2017"],
 		"allowJs": true,
 		"skipLibCheck": true,
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
 		"noEmit": true,
+		"noUnusedLocals": true,
 		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"noUnusedParameters": true,
 		"module": "esnext",
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
@@ -17,10 +21,13 @@
 		"strictNullChecks": true,
 		"paths": {
 			"@components/*": ["components/*"],
+			"@dao/*": ["dao/*"],
 			"@lib/*": ["lib/*"],
 			"@pages/*": ["pages/*"],
 			"@styles/*": ["styles/*"],
-			"@_types/*": ["types/*"]
+			"@test/*": ["test/*"],
+			"@_types/*": ["types/*"],
+			"@utils/*": ["utils/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"],
