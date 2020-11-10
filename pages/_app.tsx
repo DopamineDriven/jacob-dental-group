@@ -1,9 +1,13 @@
-import '../styles/index.css';
+import '@styles/index.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import { AppProps, NextWebVitalsMetric } from 'next/app';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { MediaContextProvider } from '@lib/window-width';
 import * as gtag from '@utils/gtag';
+
+config.autoAddCss = false;
 
 function App({ Component, pageProps }: AppProps) {
 	const router = useRouter();
