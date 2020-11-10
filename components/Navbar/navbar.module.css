@@ -1,8 +1,10 @@
 .link {
-	@apply inline-flex justify-items-center text-primary text-xl leading-6 font-medium transition ease-in-out cursor-pointer;
-
+	@apply inline-flex justify-items-center text-primary text-xl leading-6 font-medium transition-colors duration-500 ease-in-out cursor-pointer;
+	@media (max-width: 640px) {
+		@apply text-smxmd;
+	}
 	&:hover {
-		@apply text-blue-700;
+		@apply text-blue-200 transition-colors duration-500;
 	}
 
 	&:focus {
@@ -11,10 +13,42 @@
 }
 
 .logo {
-	@apply cursor-pointer transform duration-100 ease-in-out;
+	@apply cursor-pointer transform duration-500 transition-all ease-in-out py-2;
 
 	&:hover {
 		@apply shadow-md;
-		transform: scale(0.99);
+		transform: scale(1.01);
 	}
+}
+
+.divChild {
+	@apply flex justify-between align-middle text-white flex-row py-2 px-4 relative transform transition-colors;
+}
+
+.divGrandChild {
+	@apply grid grid-cols-2 w-full min-w-full items-center pl-5;
+}
+
+.logoStroke {
+	@apply transition-colors duration-500 ease-in-out;
+
+	&:hover {
+		@apply stroke-blueHover duration-500 transition-colors ease-in-out;
+	}
+}
+
+.logoPath {
+	@apply transition-colors duration-500 ease-in-out;
+
+	&:hover {
+		@apply fill-blueHover duration-500 transition-colors ease-in-out;
+	}
+}
+
+.nav {
+	@apply mx-3 grid grid-cols-6 w-full min-w-full;
+}
+
+.ul {
+	@apply col-span-1 text-right;
 }

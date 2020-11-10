@@ -7,6 +7,7 @@ import Document, {
 	DocumentInitialProps
 } from 'next/document';
 import { GA_TRACKING_ID } from '@utils/gtag';
+import { mediaStyles } from 'lib/window-width';
 
 export default class MyDocument extends Document {
 	static async getInitialProps(ctx: DocumentContext) {
@@ -18,8 +19,9 @@ export default class MyDocument extends Document {
 	render() {
 		const EnvConditional = () => {
 			return process.env.NODE_ENV === 'production' ? (
-				<Head>
+				<Head lang='en-US'>
 					<meta charSet='utf-8' />
+					<style type='text/css' dangerouslySetInnerHTML={{ __html: mediaStyles }} />
 					<link rel='stylesheet' href='/fonts/index.css' />
 					<link rel='stylesheet' href='https://use.typekit.net/cub6off.css' />
 					<script
@@ -40,8 +42,9 @@ export default class MyDocument extends Document {
 					/>
 				</Head>
 			) : (
-				<Head>
+				<Head lang='en-US'>
 					<meta charSet='utf-8' />
+					<style type='text/css' dangerouslySetInnerHTML={{ __html: mediaStyles }} />
 					<link rel='stylesheet' href='/fonts/index.css' />
 					<link rel='stylesheet' href='https://use.typekit.net/cub6off.css' />
 				</Head>
