@@ -6,7 +6,6 @@ import Document, {
 	DocumentContext,
 	DocumentInitialProps
 } from 'next/document';
-import { GA_TRACKING_ID } from '@utils/gtag';
 import { mediaStyles } from 'lib/window-width';
 
 export default class MyDocument extends Document {
@@ -17,7 +16,6 @@ export default class MyDocument extends Document {
 		return { ...initialProps };
 	}
 	render() {
-		console.log(GA_TRACKING_ID);
 		const EnvConditional = () => {
 			return process.env.NODE_ENV === 'production' ? (
 				<Head>
@@ -51,7 +49,6 @@ export default class MyDocument extends Document {
 				</Head>
 			);
 		};
-		console.log(GA_TRACKING_ID);
 		return (
 			<Html lang='en-US'>
 				<EnvConditional />
