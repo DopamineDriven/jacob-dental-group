@@ -2,7 +2,7 @@ import ReactGA, { EventArgs } from 'react-ga';
 export const GA_TRACKING_ID = process.env.GA_TRACKING_ID ?? '';
 
 export const gaInit = () => {
-	ReactGA.initialize(`${GA_TRACKING_ID}`);
+	ReactGA.initialize(`${process.env.GA_TRACKING_ID}`);
 };
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
