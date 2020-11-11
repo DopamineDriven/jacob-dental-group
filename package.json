@@ -13,6 +13,7 @@
 		"analyze": "ANALYZE=true yarn build",
 		"tsconfig:effective": "tsc --showConfig",
 		"postinstall": "npx patch-package",
+		"client:codegen": "yarn apollo codegen:generate --localSchemaFile=graphql.schema.json --target=typescript --includes=graphql/**/*.ts --tagName=gql --addTypename --globalTypesFile=types/graphql-global-types.ts",
 		"codegen:generate": "graphql-codegen --config codegen.yml"
 	},
 	"husky": {
@@ -28,6 +29,7 @@
 		"@fortawesome/free-regular-svg-icons": "^5.15.1",
 		"@fortawesome/free-solid-svg-icons": "^5.15.1",
 		"@fortawesome/react-fontawesome": "^0.1.12",
+		"@types/graphql": "^14.5.0",
 		"apollo": "^2.31.1",
 		"classnames": "^2.2.6",
 		"graphql": "^15.4.0",
