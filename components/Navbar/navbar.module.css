@@ -30,7 +30,7 @@
 }
 
 .logoStroke {
-	@apply transition-colors duration-500 ease-in-out;
+	@apply transition-colors duration-500 ease-in-out stroke-white;
 
 	&:hover {
 		@apply stroke-blueHover duration-500 transition-colors ease-in-out;
@@ -38,7 +38,7 @@
 }
 
 .logoPath {
-	@apply transition-colors duration-500 ease-in-out;
+	@apply transition-colors duration-500 ease-in-out fill-white;
 
 	&:hover {
 		@apply fill-blueHover duration-500 transition-colors ease-in-out;
