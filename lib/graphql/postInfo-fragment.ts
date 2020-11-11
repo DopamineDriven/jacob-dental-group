@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client';
-import { FRAGMENT_AUTHOR_FIELDS } from './authorInfo-fragment';
+import FRAGMENT_AUTHOR_FIELDS from './authorInfo-fragment';
 
 export const FRAGMENT_ALL_POSTS_FIELDS = gql`
 	fragment allPostsFields on Post {

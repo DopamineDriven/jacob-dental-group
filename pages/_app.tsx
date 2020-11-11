@@ -5,7 +5,7 @@ import { AppProps, NextWebVitalsMetric } from 'next/app';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { MediaContextProvider } from '@lib/window-width';
-import * as gtag from '@utils/gtag';
+import { gaInit, logPageView } from '@utils/gtag';
 
 config.autoAddCss = false;
 
@@ -13,8 +13,9 @@ function App({ Component, pageProps }: AppProps) {
 	const router = useRouter();
 
 	useEffect(() => {
-		const handleRouteChange = (url: URL) => {
-			gtag.Pageview(url);
+		gaInit();
+		const handleRouteChange = () => {
+			logPageView();
 		};
 		router.events.on('routeChangeComplete', handleRouteChange);
 		return () => {

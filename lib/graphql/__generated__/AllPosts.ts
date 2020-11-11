@@ -6,7 +6,7 @@
 import {
 	PostObjectsConnectionOrderbyEnum,
 	OrderEnum
-} from './../../types/graphql-global-types';
+} from '../../../types/graphql-global-types';
 
 // ====================================================
 // GraphQL query operation: AllPosts

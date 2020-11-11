@@ -17,6 +17,7 @@ export default class MyDocument extends Document {
 		return { ...initialProps };
 	}
 	render() {
+		console.log(GA_TRACKING_ID);
 		const EnvConditional = () => {
 			return process.env.NODE_ENV === 'production' ? (
 				<Head lang='en-US'>

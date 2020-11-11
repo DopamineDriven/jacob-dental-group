@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client';
 
-export const FRAGMENT_AUTHOR_FIELDS = gql`
+const FRAGMENT_AUTHOR_FIELDS = gql`
 	fragment authorFields on User {
 		name
 		firstName
@@ -13,3 +13,5 @@ export const FRAGMENT_AUTHOR_FIELDS = gql`
 		}
 	}
 `;
+
+export default FRAGMENT_AUTHOR_FIELDS;
